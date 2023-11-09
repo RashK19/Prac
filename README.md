@@ -1,2 +1,2 @@
-# Pracwev
+# Pracweb
  learning web development
