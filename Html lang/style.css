@@ -1,3 +1,32 @@
 h3{
     color:blue;
 }
+iframe{
+    border-radius:20px;
+
+}
+img{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-width:5px;
+    border-color:pink;
+    border-style:solid;
+    border-top-left-radius:20px;
+    border-bottom-right-radius:20px;
+    margin-top:20px;
+    cursor:pointer;
+}
+div{
+    height:50px;
+    width:200px;
+    text-align:center;
+    border:5px solid;
+    border-radius:10px;
+    background-color: blue;
+    padding:30px;
+    margin:10px;
+    cursor:pointer;
+
+
+}
