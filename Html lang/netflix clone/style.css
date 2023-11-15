@@ -1,0 +1,9 @@
+img{
+    height:70px;
+    
+}
+.header{
+    padding: 24px 32px;
+    margin:-8px 0px 0px -8px;
+    display:flex;
+}
