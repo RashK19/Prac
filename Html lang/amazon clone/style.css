@@ -1,0 +1,21 @@
+*{
+    margin:0px;
+    font-family:Arial;
+    border:border-box;
+}
+
+.navbar{
+    height:60px;
+    background-color: #0f1111;
+    color:white;
+}
+.nav-logo{
+    height:50px;
+    width:128.73px;
+}
+.logo{
+    background-image: url("Html lang\amazon clone\images\amazon-logo.png");
+    height:50px;
+    width:100%;
+    background-size: cover;
+}
