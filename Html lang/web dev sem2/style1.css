@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+    margin:0px; 
+}
+.table{
+    height:300px;
+    width:600px;
+    border:2px solid black;
+} 
