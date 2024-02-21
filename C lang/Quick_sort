@@ -1,0 +1,40 @@
+#include<stdio.h>
+int partition(int A,int p,int r);
+void main()
+{
+    int n=6;
+    int A[n];
+    for(int i=1;i<=n;i++)
+    {
+        scanf("%d",&A[i]);
+    }
+    int p=A[1];
+    int r=A[n];
+    Quicksort(A,p,r);
+}
+void Quicksort(int A,int p,int r)
+{
+    int q=partition(A,p,q);
+    Quicksort(A[n],p,q-1);
+    Quicksort(A[n],q+1,r);
+}
+int partition(int A, int p,int r)
+{
+    int x=A[r];
+    int i=p-1;
+    int temp1,temp2;
+    for(int j=1;j<=r-1;j++)
+    {
+        if(A[j]<=x)
+        {
+            i=i+1;
+            temp1=A[i];
+            A[i]=A[j];
+            A[j]=temp1;
+        }
+    }
+    temp2=A[i+1];
+    A[i+1]=A[r];
+    A[r]=temp2;
+    return i+1;
+}
