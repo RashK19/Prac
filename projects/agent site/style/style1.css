@@ -1,0 +1,57 @@
+*{
+    padding: 0%;
+    margin:0%;
+}
+/* .box{
+    background-image: url("../images_lic/pic1.jpg");
+    width:100%;
+    height:100%;
+    padding-top: 5%;
+
+} */
+.container-1-1,.info{
+    display: flex;
+}
+.container-fluid{
+    margin-top:0%;
+}
+.box1{
+    padding-top: 5%;
+    padding-left:10%;
+    font-size: 35px;
+    
+}
+.box2{
+    padding-left:26%;
+}
+.Box2,.about{
+    display: flex;
+    margin:5%;
+    margin-left:11%;
+    margin-top:0%;
+    margin-bottom:1px;
+}
+.card{
+    margin:3%;   
+}
+.Services{
+    margin-top: 5%;
+}
+.content,.info{
+    padding:5%;
+}
+.about{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.photos{
+    width:80%;
+    height:50%;
+}
+.short{
+    font-size: large;
+    margin:4%;
+}
+.form-floating:{
+    margin:10%;
+}
