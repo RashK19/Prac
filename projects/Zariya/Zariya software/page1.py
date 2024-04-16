@@ -2,10 +2,9 @@ import tkinter as tk
 from PIL import Image,ImageTk
 
 
-def open_worker_reg():
+def open_admin_portal():
     root.destroy()
-    import worker_reg
-    worker_reg.worker_reg()
+    import admin
 
 def open_track_bin():
     root.destroy()
@@ -41,7 +40,7 @@ box1.place(width=700,height=80)
 
 box2=tk.Frame(box,bg="white")
 
-worker=tk.Button(box2,text="Admin Portal",font="30",bg="light green",command=open_worker_reg).place(x=40,y=100)
+worker=tk.Button(box2,text="Admin Portal",font="30",bg="light green",command=open_admin_portal).place(x=40,y=100)
 track=tk.Button(box2,text="Track bin vehicle",font="30",bg="light green",command=open_track_bin).place(x=40,y=150)
 worker=tk.Button(box2,text="Residents Portal",font="30",bg="light green").place(x=40,y=200)
 
