@@ -9,16 +9,23 @@ mydb=mysql.connector.connect(
     database="zariya"
 )
 
+def back():
+    root.destroy()
+    import admin
+
 def submit():
-    mycursor=mydb.cursor()
-    sql="INSERT INTO ADMIN (NAME,AGE,DESIGNATION) VALUES (%s,%s,%s)"
-    val=(name.get(),age.get(),designation.get())
-    mycursor.execute(sql,val)
-    mydb.commit()
-    mydb.close()
-    name.set(" ")
-    age.set(" ")
-    designation.set(" ")
+    if(name!="" and age!="0" and designation!=""):
+        mycursor=mydb.cursor()
+        sql="INSERT INTO ADMIN (NAME,AGE,DESIGNATION) VALUES (%s,%s,%s)"
+        val=(name.get(),age.get(),designation.get())
+        mycursor.execute(sql,val)
+        mydb.commit()
+        mydb.close()
+        name.set(" ")
+        age.set(" ")
+        designation.set(" ")
+    else:
+        print ("wrong")
 
 
 root =tk.Tk()
@@ -33,6 +40,8 @@ box1=tk.Frame(box,bg="light green").place(width=500,height=400,x=50,y=50)
 name=tk.StringVar()
 age=tk.IntVar()
 designation=tk.StringVar()
+
+back=tk.Button(box1,text="Back",command=back).place(x=10,y=30)
 
 l1=tk.Label(box1,text="Name",font="30").place(x=100,y=100)
 l1=tk.Label(box1,text="Age",font="30").place(x=100,y=200)
